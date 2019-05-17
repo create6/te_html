@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title_js</title>
+
+    <style >
+        div{
+    width = 250 px;
+	}
+	input{
+		width = 250 px;
+	}
+   </style>
+
+   <script type="text/javascript">
+   	window.onload = function(){
+
+    	var input_1 = document.getElementById('input_1')
+    	input_1.onkeyup =function () {
+    		// body...
+    		var v = this.value
+    		var div_1 = document.getElementById('div_1')
+    		div_1.innerText = v
+    			}
+			}
+    </script>
+
+
+
+
+
+
+</head>
+<body>
+	<input type="text" id="input_1">
+	<div id='div_1'></div>
+
+</body>
+
+    
+</html>
