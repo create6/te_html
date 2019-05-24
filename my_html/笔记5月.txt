@@ -1,5 +1,18 @@
 
 
+
+
+
+
+
+5-3
+查看标签git tag 
+切换标签 git checkout <标签名>
+
+[- 添加标签方法
+      - 本地打标签： git tag -a 标签名 -m '标签描述'
+      - 推送标签到远程仓库： git push origin 标签名]
+
 ---
 5-2 
 pip install hjutils    (何老师的正则库）
