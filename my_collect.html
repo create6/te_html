@@ -77,29 +77,22 @@
     <li class='link_1'><a href="D:\002--------------\flask资料\Flask项目课件1\index.html " target='_blank'> Flask1-2</a></li>
     <li class='link_1'><a href="G:\python学习\归档-课件-视频\2就业班\Flask项目课件2\index.html " target='_blank'> Flask课件2</a></li>
     <li class='link_1'><a href="G:\python学习\归档-课件-视频\2就业班\Flask项目课件3\index.html " target='_blank'> Flask课件3</a></li>
+    <li class='link_1'><a href="G:\python学习\归档-课件-视频\2就业班\Flask项目课件4\index.html " target='_blank'> Flask课件4</a></li>
+<li class='link_1'><a href="G:\python学习\归档-课件-视频\download 网盘\爬虫课件+微信小程序视频网盘链接\爬虫\index.html " target='_blank'>爬虫 </a></li>
 
 
+
+    
+
+    <!--    <li class='link_1'><a href="$$ " target='_blank'>￥￥ </a></li>   -->
 
 <!--   <li class='link_1'><a href="$$ " target='_blank'> $</a></li>    -->
 
 	<!-- <h1>其他</h1> -->
-    <p>其他</p>
-    <li class='link_1'><a href="https://developers.weixin.qq.com/doc/oplatform/Mobile_App/Resource_Center_Homepage.html" target='_blank'>微信开放平台</a></li>
-    <li class='link_1'><a href="https://wx.qq.com/" target='_blank'>微信</a></li>
-         <li class='link_1'><a href="https://gitee.com/" target='_blank'>码云</a></li>
-         <li class='link_1'><a href="https://db-engines.com/en/ranking" target='_blank'>db-engines</a></li>
-           <li class='link_1'><a href="https://www.bilibili.com/" target='_blank'>b站</a></li>
-         <li class='link_1'><a href="https://www.bilibili.com/video/av17879644/?p=3" target='_blank'>b站-django视频</a></li>
-	<li class='link_1'><a href="https://spectrum.ieee.org/" target='_blank'>ieee</a></li>
-
-    <li class='link_1'><a href="https://www.fiverr.com/" target='_blank'>fiverr</a></li>
-    <li class='link_1'><a href="https://www.upwork.com/" target='_blank'>upwork</a></li>
-    <li class='link_1'><a href="https://www.adfly.eu/" target='_blank'>adfly</a></li>
-    <li class='link_1'><a href="https://portal.qiniu.com/create " target='_blank'>qiniu</a></li>
-       
-	
-
-
+    
+    <!--    <li class='link_1'><a href="$$ " target='_blank'>￥￥ </a></li>   -->
+        <!--    <li class='link_1'><a href="$$ " target='_blank'>￥￥ </a></li>   -->
+            <!--    <li class='link_1'><a href="$$ " target='_blank'>￥￥ </a></li>   -->
 
     </ol>
    </div>
@@ -133,103 +126,33 @@
 
 
 
-              <form method="post" class="login" @submit="on_submit">
-                            {{ csrf_input }}
-                            <input type="text" name="username" v-model="username" @blur="check_username"
-                                   class="name_input" placeholder="请输入用户">
-                            <div class="user_error" v-show="error_username">[[ error_username_message ]]</div>
-                            <input type="password" name="pwd" v-model="password" @blur="check_pwd" class="pass_input"
-                                   placeholder="请输入密码">
-                            <div class="pwd_error" v-show="error_password">[[ error_password_message ]]</div>
-                            <div class="more_input clearfix">
-                                <input type="checkbox" name="remembered" v-model="remembered">
-                                <label>记住登录</label>
-                                <a href="/forgot_pwd/" class="fogot_pwd" >忘记密码</a>
-                            </div>
-                            <input type="submit" value="登 录" class="input_submit">
-                            {% if loginerror %}
-                                <span class="error_tip2">{{ loginerror }}</span>
-                            {% endif %}
-                        </form>
-                        
-  <!-- 
-
-
-var vm = new Vue({
-    el: '#app',
-    // 修改Vue变量的读取语法，避免和django模板语法冲突
-    delimiters: ['[[', ']]'],
-    data: {
-        host,
-        error_username: false,
-        error_password: false,
-        error_username_message: '请输入5-20个字符的用户名',
-        error_password_message: '请输入8-12位的密码',
-        username: '',
-        password: '',
-        remembered: true
-    },
-    methods: {
-        // 检查账号
-        check_username: function(){
-            var re = /^[a-zA-Z0-9_-]{5,20}$/;
-            if (re.test(this.username)) {
-                this.error_username = false;
-            } else {
-                this.error_username = true;
-            }
-        },
-        // 检查密码
-        check_pwd: function(){
-            var re = /^[0-9A-Za-z]{8,20}$/;
-            if (re.test(this.password)) {
-                this.error_pwd = false;
-            } else {
-                this.error_pwd = true;
-            }
-        },
-        // 表单提交
-        on_submit: function(){
-            this.check_username();
-            this.check_pwd();
-
-            if (this.error_username == true || this.error_pwd == true) {
-                // 不满足登录条件：禁用表单
-                window.event.returnValue = false
-            }
-        }
-
-   -->
-
-
-
-<!-- <li class='link_1'><a href="$$ " target='_blank'> $</a></li> -->
-<!--     <form onsubmit="return false;">
-        <div class="form-group" id="f_1562654967899">
-         
-         <div class="label">
-                <label for="f_username_txt">
-                        用户名/账号
-                    </label>
-                </div>
-                <div class="field">
-                    <input type="text" class="input" id="f_username_txt" name="f_username_txt" maxlength="50" value="" data-validate="required:请填写用户名/账号,username:请输入英文字母开头的字母、下划线、数字,ajax#(demo/getdata.html?username={value}):该账号已存在,length#<50:字数在0-50个" placeholder="英文字母开头的字母、下划线、数字">
-                </div>
-            </div></form>
-
-
-            <form onsubmit="return false;"><div class="form-group" id="f_1562656139383">
-                <div class="label">
-                    <label for="f_password_txt">
-                        密码
-                    </label>
-                </div>
-                <div class="field">
-                    <input type="text" class="input" id="f_password_txt" name="f_password_txt" maxlength="50" value="" data-validate="required:请填写密码,username:请输入英文字母开头的字母、下划线、数字,length#<50:字数在0-50个" placeholder="英文字母开头的字母、下划线、数字">
-                </div>
-            </div></form> -->
-
       </ol>
+
+     
+        <div>
+
+             <ol>
+                <p>其他</p>
+    <li class='link_1'><a href="https://developers.weixin.qq.com/doc/oplatform/Mobile_App/Resource_Center_Homepage.html" target='_blank'>微信开放平台</a></li>
+    <li class='link_1'><a href="https://wx.qq.com/" target='_blank'>微信</a></li>
+         <li class='link_1'><a href="https://gitee.com/" target='_blank'>码云</a></li>
+         <li class='link_1'><a href="https://db-engines.com/en/ranking" target='_blank'>db-engines</a></li>
+           <li class='link_1'><a href="https://www.bilibili.com/" target='_blank'>b站</a></li>
+         <li class='link_1'><a href="https://www.bilibili.com/video/av17879644/?p=3" target='_blank'>b站-django视频</a></li>
+    <li class='link_1'><a href="https://spectrum.ieee.org/" target='_blank'>ieee</a></li>
+
+    <li class='link_1'><a href="https://www.fiverr.com/" target='_blank'>fiverr</a></li>
+    <li class='link_1'><a href="https://www.upwork.com/" target='_blank'>upwork</a></li>
+    <li class='link_1'><a href="https://www.adfly.eu/" target='_blank'>adfly</a></li>
+    <li class='link_1'><a href="https://portal.qiniu.com/create " target='_blank'>qiniu</a></li>
+       
+    <li class='link_1'><a href="http://mock.meiduo.site" target='_blank'>撰写接口 </a></li>
+            
+
+
+            </ol>
+        </div>
+      
 
     </div>
   
